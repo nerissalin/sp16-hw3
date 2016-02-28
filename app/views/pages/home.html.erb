@@ -1,0 +1,15 @@
+<h1> Page displaying everything cool </h1>
+<h2> Users </h2>
+<% @u.each do |x| %>
+	<p> This user's username is <%= x.username %> and can be reached at <%= x.email %>. They are <%= x.age.to_s %> years old. </p>
+<% end %>
+
+<h2> Cats </h2>
+<% @c.each do |x| %>
+	<p> This cat's name is <%= x.name %> </p>
+<% end %>
+
+<h2> To-Dos </h2>
+<% @t.each do |x| %>
+	<p> You need to do <%= x.name %> which is described: <%= x.description %> </p>
+<% end %>
